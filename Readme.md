@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Filipp Chumak](https://up.htmlacademy.ru/htmlcss/23/user/528585).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
