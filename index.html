@@ -179,26 +179,27 @@
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      <div id="footer-feedback" class="feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
+      <section class="modal">
         <div class="modal-content">
-          <div class="modal-header">
-            <h3>Напишите нам</h3>
-            <span class="modal-close"><!-- img/icon-close-cross.svg --></span>
-          </div>
-          <div class="modal-body">
-            <form>
+          <h3>Напишите нам</h3>
+          <button type="button" class="modal-close">x<!-- img/icon-close-cross.svg --></button>
+          <form class="modal-form">
+            <div class="modal-form-group">
               <label for="name">Ваше имя:</label>
               <input id="name" type="text" placeholder="Имя Фамилия" name="name" required>
+            </div>
+            <div class="modal-form-group">
               <label for="email">Ваш e-mail:</label>
               <input id="email" type="email" placeholder="email@example.com" name="email" required>
-              <label for="comment">Ваше имя:</label>
+            </div>
+            <div class="modal-form-group">
+              <label for="comment">Текст письма:</label>
               <textarea id="comment" placeholder="В свободной форме" name="comment" required></textarea>
-              <input type="submit" value="Отправить">
-            </form>
-          </div>
+            </div>
+            <button type="button" class="button-primary-red">Отправить</button>
+          </form>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>

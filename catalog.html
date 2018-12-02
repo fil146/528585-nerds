@@ -36,42 +36,44 @@
     <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <span class="filter-header">Стоимость</span>
-        <p class="price-filter">
-          от <input class="price-from" placeholder="0"/>
-          до <input class="price-to" placeholder="15 000" />
-        </p>
-        <ul class="grid-list">
-          <li class="grid-item active">
-            <label class="radio"><input type="radio" checked name="adaptive">Адаптивная</label>
-          </li>
-          <li class="grid-item">
-            <label class="radio"><input type="radio" name="fixed">Фиксированная</label>
-          </li>
-          <li class="grid-item">
-            <label class="radio"><input type="radio" name="stretching">Резиновая</label>
-          </li>
-        </ul>
-        <span class="filter-header">Особенности</span>
-        <ul class="feature-list">
-          <li class="feature-item active">
-            <label class="checkbox"><input type="checkbox" checked name="slider">Слайдер</label>
-          </li>
-          <li class="feature-item">
-            <label class="checkbox"><input type="checkbox" name="advantages">Блок преимуществ</label>
-          </li>
-          <li class="feature-item active">
-            <label class="checkbox"><input type="checkbox" checked name="news">Новости</label>
-          </li>
-          <li class="feature-item">
-            <label class="checkbox"><input type="checkbox" name="gallery">Галерея</label>
-          </li>
-          <li class="feature-item">
-            <label class="checkbox"><input type="checkbox" name="cart">Корзина</label>
-          </li>
-        </ul>
-        <a class="button-secondinary">Показать</a>
+        <form>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <span class="filter-header">Стоимость</span>
+          <p class="price-filter">
+            от <input class="price-from" placeholder="0"/>
+            до <input class="price-to" placeholder="15 000" />
+          </p>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label class="radio"><input type="radio" checked name="filter-grid" value="adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-item">
+              <label class="radio"><input type="radio" name="filter-grid" value="fixed">Фиксированная</label>
+            </li>
+            <li class="filter-item">
+              <label class="radio"><input type="radio" name="filter-grid" value="responsive">Резиновая</label>
+            </li>
+          </ul>
+          <span class="filter-header">Особенности</span>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <label class="checkbox"><input type="checkbox" checked name="filter-features" value="slider">Слайдер</label>
+            </li>
+            <li class="filter-item">
+              <label class="checkbox"><input type="checkbox" name="filter-features" value="advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-item">
+              <label class="checkbox"><input type="checkbox" checked name="filter-features" value="news">Новости</label>
+            </li>
+            <li class="filter-item">
+              <label class="checkbox"><input type="checkbox" name="filter-features" value="gallery">Галерея</label>
+            </li>
+            <li class="filter-item">
+              <label class="checkbox"><input type="checkbox" name="filter-features" value="cart">Корзина</label>
+            </li>
+          </ul>
+          <button type="button" class="button-secondinary">Показать</button>
+        </form>
       </section>
       <div class="sort">
         <span class="sort-header">Сортировка</span>
@@ -183,26 +185,27 @@
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      <div id="footer-feedback" class="feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
+      <section class="modal">
         <div class="modal-content">
-          <div class="modal-header">
-            <h3>Напишите нам</h3>
-            <span class="modal-close"><!-- img/icon-close-cross.svg --></span>
-          </div>
-          <div class="modal-body">
-            <form>
+          <h3>Напишите нам</h3>
+          <button type="button" class="modal-close">x<!-- img/icon-close-cross.svg --></button>
+          <form class="modal-form">
+            <div class="modal-form-group">
               <label for="name">Ваше имя:</label>
               <input id="name" type="text" placeholder="Имя Фамилия" name="name" required>
+            </div>
+            <div class="modal-form-group">
               <label for="email">Ваш e-mail:</label>
               <input id="email" type="email" placeholder="email@example.com" name="email" required>
-              <label for="comment">Ваше имя:</label>
+            </div>
+            <div class="modal-form-group">
+              <label for="comment">Текст письма:</label>
               <textarea id="comment" placeholder="В свободной форме" name="comment" required></textarea>
-              <input type="submit" value="Отправить">
-            </form>
-          </div>
+            </div>
+            <button type="button" class="button-primary-red">Отправить</button>
+          </form>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
