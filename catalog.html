@@ -19,7 +19,7 @@
           <li>
             <a href="#">Клиенты</a>
           </li>
-          <li class="site-navigation-current">
+          <li class="site-navigation active">
             <a>Магазин</a>
           </li>
           <li>
@@ -43,32 +43,32 @@
           до <input class="price-to" placeholder="15 000" />
         </p>
         <ul class="grid-list">
-          <li class="grid-item-selected">
-            Адаптивная
+          <li class="grid-item active">
+            <label class="radio"><input type="radio" checked name="adaptive">Адаптивная</label>
           </li>
           <li class="grid-item">
-            Фиксированная
+            <label class="radio"><input type="radio" name="fixed">Фиксированная</label>
           </li>
           <li class="grid-item">
-            Резиновая
+            <label class="radio"><input type="radio" name="stretching">Резиновая</label>
           </li>
         </ul>
         <span class="filter-header">Особенности</span>
         <ul class="feature-list">
-          <li class="feature-item-selected">
-            Слайдер
+          <li class="feature-item active">
+            <label class="checkbox"><input type="checkbox" checked name="slider">Слайдер</label>
           </li>
           <li class="feature-item">
-            Блок преимуществ
+            <label class="checkbox"><input type="checkbox" name="advantages">Блок преимуществ</label>
           </li>
-          <li class="feature-item-selected">
-            Новости
-          </li>
-          <li class="feature-item">
-            Галерея
+          <li class="feature-item active">
+            <label class="checkbox"><input type="checkbox" checked name="news">Новости</label>
           </li>
           <li class="feature-item">
-            Корзина
+            <label class="checkbox"><input type="checkbox" name="gallery">Галерея</label>
+          </li>
+          <li class="feature-item">
+            <label class="checkbox"><input type="checkbox" name="cart">Корзина</label>
           </li>
         </ul>
         <a class="button-secondinary">Показать</a>
@@ -76,7 +76,7 @@
       <div class="sort">
         <span class="sort-header">Сортировка</span>
         <ul class="sort-list">
-          <li class="sort-item-active">
+          <li class="sort-item active">
             По цене
           </li>
           <li class="sort-item">
@@ -87,7 +87,7 @@
           </li>
         </ul>
         <ul class="sort-direction">
-          <li class="sort-direction-down-active">
+          <li class="sort-direction-down active">
             <!-- Тут будет inline svg <img src="icon-down-dir.png" alt="Сортировать сверху вниз" /> -->
           </li>
           <li class="sort-direction-up">
@@ -99,35 +99,45 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
-            <img src="img-sedona.jpg" width="360" height="576" alt="Главная страница макета Sedona"/>
+            <a class="catalog-item" href="#">
+              <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
+              <img src="img/sedona-catalog.jpg" width="360" height="576" alt="Главная страница макета Sedona"/>
+            </a>
             <div class="catalog-item-description">
               <h4>Sedona</h4>
-              <p>
-                Информационный сайт для туристов
-              </p>
+              <p>Информационный сайт для туристов</p>
               <a class="button-catalog-item">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
-            <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
-            <img src="img/pink-catalog.jpg" width="360" height="576" alt="Главная страница макета Pink"/>
+            <a class="catalog-item" href="#">
+              <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
+              <img src="img/pink-catalog.jpg" width="360" height="576" alt="Главная страница макета Pink"/>
+            </a>
           </li>
           <li class="catalog-item">
-            <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
-            <img src="img/barbershop-catalog.jpg" width="360" height="576" alt="Главная страница макета Барбершоп"/>
+            <a class="catalog-item" href="#">
+              <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
+              <img src="img/barbershop-catalog.jpg" width="360" height="576" alt="Главная страница макета Барбершоп"/>
+            </a>
           </li>
           <li class="catalog-item">
-            <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
-            <img src="img/mishka-catalog.jpg" width="360" height="576" alt="Главная страница макета Мишка"/>
+            <a class="catalog-item" href="#">
+              <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
+              <img src="img/mishka-catalog.jpg" width="360" height="576" alt="Главная страница макета Мишка"/>
+            </a>
           </li>
           <li class="catalog-item">
-            <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
-            <img src="img/aplus-catalog.jpg" width="360" height="576" alt="Главная страница макета Аплюс"/>
+            <a class="catalog-item" href="#">
+              <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
+              <img src="img/aplus-catalog.jpg" width="360" height="576" alt="Главная страница макета Аплюс"/>
+            </a>
           </li>
           <li class="catalog-item">
-            <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
-            <img src="img/kvast-catalog.jpg" width="360" height="576" alt="Главная страница макета Кваст"/>
+            <a class="catalog-item" href="#">
+              <!-- Тут будет inline svg <img src="catalog-item-browser-light.jpg" width="360" height="40" alt="Шапка браузера светлая" /> -->
+              <img src="img/kvast-catalog.jpg" width="360" height="576" alt="Главная страница макета Кваст"/>
+            </a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -154,28 +164,44 @@
         </div>
         <div class="contact-card">
           <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
-          </p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
           <a class="button-primary-red" href="#">Напишите нам</a>
         </div>
       </section>
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button" href="#" area-label="Nerds во ВКонтакте"></a>
+            <a class="social-button" href="#" area-label="Nerds во ВКонтакте">Nerds во ВКонтакте</a>
           </li>
           <li>
-            <a class="social-button" href="#" area-label="Nerds на Фейсбуке"></a>
+            <a class="social-button" href="#" area-label="Nerds на Фейсбуке">Nerds на Фейсбуке</a>
           </li>
           <li>
-            <a class="social-button" href="#" area-label="Nerds в Инстаграме"></a>
+            <a class="social-button" href="#" area-label="Nerds в Инстаграме">Nerds в Инстаграме</a>
           </li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
-        <p>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <div id="footer-feedback" class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Напишите нам</h3>
+            <span class="modal-close"><!-- img/icon-close-cross.svg --></span>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" placeholder="Имя Фамилия" name="name" required>
+              <label for="email">Ваш e-mail:</label>
+              <input id="name" type="email" placeholder="email@example.com" name="email" required>
+              <label for="name">Ваше имя:</label>
+              <textarea id="comment" placeholder="В свободной форме" name="comment" required></textarea>
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
