@@ -3,38 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог | Дизайн-студия Nerds</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-navigation">
-        <ul class="site-navigation">
-          <li>
+      <nav class="page-nav">
+        <ul class="site-nav">
+          <li class="site-nav-item">
             <a class="main-header-logo" href="index.html">
               <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип дизайн-студии Nerds" />
             </a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a href="#">Студия</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a href="#">Клиенты</a>
           </li>
-          <li class="site-navigation active">
-            <a>Магазин</a>
+          <li class="site-nav-item active">
+            <a href="#">Магазин</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-nav">
           <li class="cart">
             <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
     </header>
     <main>
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filter">
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -74,29 +75,30 @@
           </ul>
           <button type="submit" class="button-secondinary">Показать</button>
         </form>
+        <div class="sort">
+          <span class="sort-header">Сортировка</span>
+          <ul class="sort-list">
+            <li class="sort-item active">
+              По цене
+            </li>
+            <li class="sort-item">
+              По типу
+            </li>
+            <li class="sort-item">
+              По названию
+            </li>
+          </ul>
+          <ul class="sort-direction">
+            <li class="sort-direction-down active">
+              <!-- Тут будет inline svg <img src="icon-down-dir.png" alt="Сортировать сверху вниз" /> -->
+            </li>
+            <li class="sort-direction-up">
+              <!-- Тут будет inline svg <img src="icon-up-dir.png" alt="Сортировать сверху вниз" /> -->
+            </li>
+          </ul>
+        </div>
       </section>
-      <div class="sort">
-        <span class="sort-header">Сортировка</span>
-        <ul class="sort-list">
-          <li class="sort-item active">
-            По цене
-          </li>
-          <li class="sort-item">
-            По типу
-          </li>
-          <li class="sort-item">
-            По названию
-          </li>
-        </ul>
-        <ul class="sort-direction">
-          <li class="sort-direction-down active">
-            <!-- Тут будет inline svg <img src="icon-down-dir.png" alt="Сортировать сверху вниз" /> -->
-          </li>
-          <li class="sort-direction-up">
-            <!-- Тут будет inline svg <img src="icon-up-dir.png" alt="Сортировать сверху вниз" /> -->
-          </li>
-        </ul>
-      </div>
+
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-list">
@@ -160,15 +162,15 @@
     </main>
     <footer>
       <section class="contacts">
-        <div class="map">
-          <img src="img/footer-map.png" width="1442" height="418" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"/>
-          <img src="img/footer-map-marker.png" width="231" height="190" alt="Логотип Nerds в пузыре со стрелкой"/>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <img src="img/footer-map.png" width="1442" height="418" alt="Адрес студии: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"/>
+        <div class="address-card">
+          <strong style="line-height:30px">NЁRDS DESIGN STUDIO</strong>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p style="margin-bottom:18px">тел. +7 (812) 275-75-75</p>
+          <button class="button primary-red" href="#" style="width:100%">Напишите нам</a>
         </div>
-        <div class="contact-card">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-          <a class="button-primary-red" href="#">Напишите нам</a>
-        </div>
+        <img src="img/footer-map-marker.png" width="231" height="190" alt="Логотип Nerds в пузыре со стрелкой"/>
       </section>
       <div class="footer-social">
         <ul>
@@ -202,7 +204,7 @@
               <label for="comment">Текст письма:</label>
               <textarea id="comment" placeholder="В свободной форме" name="comment" required></textarea>
             </div>
-            <button type="submit" class="button-primary-red">Отправить</button>
+            <button type="submit" class="button primary-red">Отправить</button>
           </form>
         </div>
       </section>
