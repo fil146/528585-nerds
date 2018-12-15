@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог | Дизайн-студия Nerds</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -73,7 +74,7 @@
               <label class="checkbox"><input type="checkbox" name="filter-features" value="cart">Корзина</label>
             </li>
           </ul>
-          <button type="submit" class="button-secondinary">Показать</button>
+          <button type="submit" class="button-gray">Показать</button>
         </form>
         <div class="sort">
           <span class="sort-header">Сортировка</span>
@@ -90,10 +91,10 @@
           </ul>
           <ul class="sort-direction">
             <li class="sort-direction-down active">
-              <!-- Тут будет inline svg <img src="icon-down-dir.png" alt="Сортировать сверху вниз" /> -->
+              <!-- Тут будет inline svg <img src="icon-down-dir.png" alt="Сортировать по возрастанию" /> -->
             </li>
             <li class="sort-direction-up">
-              <!-- Тут будет inline svg <img src="icon-up-dir.png" alt="Сортировать сверху вниз" /> -->
+              <!-- Тут будет inline svg <img src="icon-up-dir.png" alt="Сортировать по-убыванию" /> -->
             </li>
           </ul>
         </div>
@@ -165,10 +166,10 @@
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <img src="img/footer-map.png" width="1442" height="418" alt="Адрес студии: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"/>
         <div class="address-card">
-          <strong style="line-height:30px">NЁRDS DESIGN STUDIO</strong>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p style="margin-bottom:18px">тел. +7 (812) 275-75-75</p>
-          <button class="button primary-red" href="#" style="width:100%">Напишите нам</a>
+          <h4>NЁRDS DESIGN STUDIO</h4>
+          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button" href="#">Напишите нам</button>
         </div>
         <img src="img/footer-map-marker.png" width="231" height="190" alt="Логотип Nerds в пузыре со стрелкой"/>
       </section>
@@ -204,7 +205,7 @@
               <label for="comment">Текст письма:</label>
               <textarea id="comment" placeholder="В свободной форме" name="comment" required></textarea>
             </div>
-            <button type="submit" class="button primary-red">Отправить</button>
+            <button type="submit" class="button">Отправить</button>
           </form>
         </div>
       </section>
