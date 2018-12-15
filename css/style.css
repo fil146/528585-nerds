@@ -263,24 +263,38 @@ h4 {
   display: flex;
 }
 
-.site-nav,
+.site-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .user-nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.site-nav a,
+.site-nav a  {
+  color: #000000;
+}
+
 .user-nav a {
   color: #000000;
 }
 
-.site-nav a:hover,
+.site-nav a:hover {
+  color: #FB565A;
+}
+
 .user-nav a:hover {
   color: #FB565A;
 }
 
-.site-nav a:focus,
+.site-nav a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .user-nav a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
